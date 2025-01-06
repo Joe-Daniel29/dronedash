@@ -2,8 +2,8 @@ from fastapi import FastAPI
 import serial
 
 
-# ser = serial.Serial('COM8', 9600)
-# print(ser.name)
+ser = serial.Serial('COM8', 9600)
+print(ser.name)
 
 app = FastAPI()
 
@@ -22,15 +22,12 @@ async def sendvoltage(voltage: float):
 
 @app.post("/lightstate/{state}")
 async def state(state : bool):
-    val = 0 if state else 1
-    print(val)
-    # ser.write(val.encode())
+    val = "0" if state else "1"
+    ser.write(val.encode())
     return "done"
-
 
 # while True:
 #     val = input("Enter state: ")
 #     ser.write(val.encode())
 
 
-# ser.close()
