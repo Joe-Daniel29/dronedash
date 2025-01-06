@@ -7,11 +7,6 @@ import serial
 
 app = FastAPI()
 
-voltage = 15 ## (13.2-16.8) [for a 4s Lipo]
-percentage = ((v-13.2)/(16.8-13.2))*100
-
-
-
 
 @app.post("/lightstate/{state}")
 async def state(state : bool):

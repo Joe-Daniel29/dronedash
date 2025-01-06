@@ -17,12 +17,6 @@ function setArm(){
 }
 
 
-const battery = document.querySelectorAll('.unit')
-
-console.log(battery)
-
-
-
 let sky = document.querySelector(".data1");
 sky.style.backgroundImage =
   "linear-gradient(0deg, #d76112 5%,#d3834d 54%, #8ab8ba 55%,#38a3ab 80%)";
