@@ -16,10 +16,14 @@ function setArm(){
   });
 }
 
+let percentage = 100;
+let batteryval = Math.floor(percentage/10);
 
-const battery = document.querySelectorAll('.unit')
+for(let i = 0; i < batteryval; i++){
+  const battery = document.querySelectorAll('.unit')
+  battery[i].style.backgroundColor="#2dcc6f"
 
-console.log(battery)
+}
 
 
 
