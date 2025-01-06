@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.root {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #272727;
+  display: grid;
+  grid-template-columns: repeat(256, 1fr);
+  grid-template-rows: repeat(128, 1fr);
+}
+.dataPanelBorder {
+  background-image: linear-gradient(120deg, #fc7518, #319197);
+  grid-row: 5 / span 120;
+  grid-column: 34 / span 220;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dataPanel {
+  background-color: #000000;
+  grid-row: 6 / span 118;
+  grid-column: 35 / span 218;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(64, 1fr);
+  grid-template-rows: repeat(32, 1fr);
+}
+.navPanelBorder {
+  grid-row: 5 / span 120;
+  grid-column: 1 / span 30;
+  background-image: linear-gradient(90deg, #fc7518, #319197);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navPanel {
+  background-color: black;
+  grid-row: 6 / span 118;
+  grid-column: 1 / span 29;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: grid;
+  grid-template-rows: repeat(32, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+.data1 {
+  /* height: 50%;
+    width: 20%; */
+  grid-row: 2 / span 15;
+  grid-column: 2 / span 28;
+  background-color: black;
+  border-radius: 15px;
+
+
+  /* background-image: linear-gradient(0deg, #924816 5%,#de6819 44%, #49c0c6 45%,#38a3ab 80%); */
+  background-image: linear-gradient(0deg, #d76112 5%,#d3834d 44%, #8ab8ba 45%,#38a3ab 80%);
+  /* background-image: linear-gradient(0deg, #d76112 5%,#d3834d 38%, #8ab8ba 45%,#38a3ab 80%); */
+
+}
+
+.data2 {
+  /* height: 50%;
+    width: 20%; */
+  grid-row: 18 / span 14;
+  grid-column: 2 / span 28;
+  background-color: black;
+  border: 3px solid #319197;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.data3 {
+  /* height: 50%;
+    width: 20%; */
+  grid-row: 2 / span 23;
+  grid-column: 31 / span 33;
+  background-color: black;
+  border: 3px solid #319197;
+  border-radius: 15px;
+}
+.data4 {
+  /* height: 50%;
+    width: 20%; */
+  grid-row: 26 / span 6;
+  grid-column: 31 / span 33;
+  background-color: black;
+  border: 3px solid #fc7518;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*//////////////////////////////////////////////// BATTERY///////////////////////////////////////////// */
+.Battery {
+  display: flex;
+  align-items: center;
+}
+
+.battery {
+  background-color: black;
+  border-radius: 2px;
+  border: 1px solid #229753;
+  display: flex;
+  gap: 1px;
+  padding: 1px;
+}
+.battery > * {
+  width: 3px;
+  height: 1.8rem;
+  border-radius: 1px;
+  background-color: #2dcc6f;
+
+}
+.batterytip {
+  background-color: #2dcc6f;
+
+  height: 1rem;
+  width: 0.6rem;
+
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid #229753;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left: #2dcc6f;
+}
+/*/ /////////////////////////////////////////////// BATTERY///////////////////////////////////////////// */
+
+/*//////////////////////////////////////////////// SIGNAL///////////////////////////////////////////// */
+.Signal{
+
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.Signal >*{
+  background-color: #319197;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.signal1{
+  width: 0.4rem;
+  height: 1rem;
+}
+
+.signal2{
+  width: 0.4rem;
+  height: 1.2rem;
+}
+.signal3{
+  width: 0.4rem;
+  height: 1.4rem;
+}
+.signal4{
+  width: 0.4rem;
+  height: 1.6rem;
+}
+.signal5{
+  width: 0.4rem;
+  height: 1.8rem;
+}
+
+
+/*/ /////////////////////////////////////////////// SIGNAL///////////////////////////////////////////// */
+
+/*//////////////////////////////////////////////// ELAPSED TIME///////////////////////////////////////////// */
+
+.elapsedTime{
+  color: #ffa76c;
+  font-family: monospace;
+  font-size: xx-large;
+}
+
+/*/ /////////////////////////////////////////////// ELAPSED TIME///////////////////////////////////////////// */
+
+/*//////////////////////////////////////////////// BUTTONS///////////////////////////////////////////// */
+.data2>.Buttons{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+  gap:5px;
+
+}
+.btncont{
+  display: flex;
+  flex-direction: row-reverse;
+  color:white;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+.data2>.Buttons>.btncont>.outerButton{
+  width:2.4rem;
+  height: 1.3rem;
+  background-color:#2fa5ad;
+  display: flex;
+  flex-direction: row;
+  border-radius: 13px;
+  border:1px solid #07e4f4;
+  align-items: center;
+  
+}
+
+.data2>.Buttons>.btncont>.outerButton>.innerButton{
+  width:1.1rem;
+  height: 1.1rem;
+  background-color:#094549;
+  display: flex;
+  border-radius: 50%;
+}
+.name{
+  font-family: monospace;
+}
+.data2>.Buttons>.btncont>.outerButton>.innerButton:hover{
+  cursor: pointer;
+  background-color: #0a3134;
+}
+.data2>.Buttons>.btncont>.outerButton:hover{
+  cursor: pointer;
+  }
+
+
+
+/*/ /////////////////////////////////////////////// BUTTONS///////////////////////////////////////////// */
+
+.navPanel > .heading {
+  grid-row: 2;
+  color: wheat;
+}
