@@ -82,6 +82,10 @@
   background-color: black;
   border: 3px solid #319197;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .data4 {
   /* height: 50%;
@@ -240,3 +244,56 @@
   grid-row: 2;
   color: wheat;
 }
+
+/* //////////////////////////////////////////////////LOGS/////////////////////////////////////////////// */
+.log {
+  position: relative;
+  top: 20px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border: 1px solid #319197;
+  border-radius: 8px;
+  color: white;
+  max-height: 130px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: small;
+}
+/* //////////////////////////////////////////////////LOGS/////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////CAMERA +DATA/////////////////////////////////////////////// */
+.CameraFeed{
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+}
+
+.CameraView{
+  width: 400px;
+  height: 180px;
+  background-color: black;
+  border: 1px solid white ;
+  border-radius: 5px;
+}
+.CameraControls{
+  width: 180px;
+  height: 180px;
+  background-color: black;
+  border: 1px solid white ;
+  border-radius: 5px;
+
+}
+
+.additionalInfo{
+  width: 600px;
+  height: 200px;
+  background-color: red;
+}
+/* //////////////////////////////////////////////////CAMERA/////////////////////////////////////////////// */
