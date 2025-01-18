@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", displayVoltage);
 
 let sky = document.querySelector(".data1");
 sky.style.backgroundImage =
-  "linear-gradient(0deg, #d76112 5%,#d3834d 14%, #8ab8ba 15%,#38a3ab 80%)";
+  "linear-gradient(0deg, #d76112 5%,#d3834d 44%, #8ab8ba 45%,#38a3ab 80%)";
 
 setInterval(displayVoltage, 1000); // Fetch every 5 seconds
 
